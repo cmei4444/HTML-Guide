@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML Review Guide</title>
+		<link rel="stylesheet" type="text/css" href="review_guide.css">
+	</head>
+	
+	<body>
+	
+		<section>
+			<h1>HTML Review Guide</h1>
+			<hr>
+
+
+			<strong>Basic</strong>
+
+			<ul class="l1"> 
+				<li>
+					Basic structure of an HTML Document:
+					<ul>
+						<li> You must have &lt;!DOCTYPE html&gt; at the beginning of every document.
+						<li> Make sure to include &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; opening and closing tags.
+						<li> Use &lt;link&gt; tag to link your html document to a css stylesheet.
+					</ul>
+				</li>
+				<li>
+					Anchor + Anchor Style: Use &lt;a&gt; before the link text and &lt;/a&gt; after the link text; inside the
+					&lt;a&gt; tag, after &lt;a, put href="(your link)". Between the tags, put the content your link will display as.
+					<br> 
+					Example: &lt;a href="http://www.google.com"&gt;Link to Google&lt;/a&gt; 
+					<br> 
+					<a href="http://www.google.com">Link to Google</a>
+				</li>
+
+				<li>
+					Image: Use &lt;img&gt; tag, after &lt;img, inside the tag, put src="(picture link)". 
+					<br> Example: &lt;img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg"&gt; 
+					<br> <img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" height="200">
+				</li>
+
+				<li>
+					Lists: 
+					<br> 
+					<ul> 
+						<li> Ordered Lists: These are numbered lists. To make one, use &lt;ol&gt; before and &lt;/ol&gt; after the list. 
+							<ol> 
+								<li>This is an example of an ordered list. 
+								<li>This is the second thing in your list. 
+							</ol> 
+						</li>
+						<li> Unordered Lists: These are bulleted lists. This is an example of an unordered list. To make one, use &lt;ul&gt;
+						before and &lt;/ul&gt; after the list. 
+					</ul> 
+					Use &lt;li&gt; before and &lt;/li&gt; after each object in a list.
+				</li>
+
+				<li> 
+					Paragraphs: Use &lt;p> before and &lt;/p> after your paragraph. 
+					<p> This is an example paragraph. This is a wonderful paragraph. Worship this paragraph. Meow
+					meow meow meow meow meow meow meow meow meow meow meow meow meow meow
+					meow meow meow. </p>
+				</li>
+			</ul>
+			<hr>
+
+
+			<strong>Intermediate</strong>
+
+			<ul class="l1">
+				<li> 
+					Section tags: Use &lt;section&gt; before and &lt;/section&gt; after your intended section.
+				</li>
+
+				<li> 
+					Fonts: In the  &lt;style&gt; section, under what you want the specific font to be for, put font: (font-weight)(font-size)
+					(font-family);
+					<br> Example: The font for this page's text: 
+					<br> font: normal 14px "Trebuchet MS", sans-serif
+				</li>
+
+				<li> 
+					Image styles (including border): 
+					<ul>
+						<li>
+						Height/ Width: In the &lt;img&gt; tag, use height="(desired height)" and width="(desired width)". This can also be 
+						done in style, under img.
+						</li>
+						
+						<li> Border: In the  &lt;style&gt; section, under img, use border: style color weight
+							<br> Different border styles:
+							<ul>
+								<li>Solid
+								<li>Dotted
+								<li>Dashed
+								<li>Double
+								<li>Groove
+								<li>Ridge
+								<li>Inset
+								<li>Outset
+							</ul>
+						</li>
+					</ul>
+					
+					Example: border: outset mediumAquamarine 6px 
+					<br>
+					<img  src="https://i.ytimg.com/vi/icqDxNab3Do/maxresdefault.jpg" height="200" class= "i1">
+				</li>
+			
+				<li> Table 
+					<table width="700px"> 
+						<tr> 
+							<th>This is a table. It is fancy. </th> 
+							<td>Use &lt;table&gt; and &lt;/table&gt; tags before and after a table. </td> 
+						</tr> 
+						<tr> 
+							<td> This is a new row of the table. To make a row, use &lt;tr&gt; before and &lt;/tr&gt; after your row.</td> 
+							<th>This is a table heading cell. Use &lt;th&gt; and &lt;/th&gt; around the text.</th> 
+						</tr> 
+						<tr>
+							<td>This is a table data cell.</td> <td>To make a table data cell, use &lt;tr&gt; before and &lt;/tr&gt; after 
+							the text.</td> 
+						</tr> 
+					</table> 
+			
+			</ul>
+			<hr>
+
+
+
+			<strong>Advanced</strong>
+
+			<ul class="l1"> 
+				<li>
+					Margin: In &lt;style&gt;, under whatever you want the margin to be for, use margin-top, margin-bottom, margin-left, and 
+					margin-right; or use margin: top right bottom left as a shortcut. 
+					<br> Example: margin: 75px 50px 75px 50px;
+				</li>
+				
+				<li> Shadow: 
+					<ul>
+						<li>
+							Box shadow: For images, put in &lt;style&gt; under the image(s) you want to have a shadow. Use box-shadow: 
+							(horizontal)(vertical)(blur)(spread)(color)
+							<br>Example: box-shadow: 10px 10px 5px 3px mediumAquamarine
+							<br> <img
+src="http://s2.dmcdn.net/Ub1O8/1280x720-mCQ.jpg" height="200" class= "i2"> 
+						</li>
+						
+						<li>
+							Text shadow: for text, put in &lt;style&gt; under whatever text you want to have a shadow. You can have multiple 
+							shadows on the same text. Use text-shadow: (horizontal)(vertical)(blur)(spread)(color)
+					</ul>
+					Example: For the heading of this page: text-shadow: 6px 3px 4px aquamarine
+				</li>
+				
+				<li> Background Image: In &lt;style&gt;, under whatever you want the background to be for, use background-image: url("(link 
+				to the image you want to use)");
+				<br> Example for this page: background-image: url("http://cdn.pcwallart.com/images/gradient-wallpaper-2.jpg");  
+			</ul> 
+			<br>
+
+		</section>
+
+	</body>
+</html>
